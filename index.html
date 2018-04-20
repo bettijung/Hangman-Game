@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hangman</title>
+	 <!-- Style Link -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Raleway" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="jumbotron">
+			<div class="container" id="header">
+			<h1>Hangman</h1>
+			<h2>Guess the top favored names in the US</h2>
+			<h4>Click any letter to begin...</h4>
+			</div>
+		</div>
+	
+		<!-- Game counters held here -->
+		<div class="row">
+			<div class="col-lg-12">
+	
+				<!-- First Panel: Holds Word to Guess (blanks and guessed word) -->
+				<div class="panel panel-default" id="words">
+					<div class="panel-heading">
+					<h3 class="panel-title"><strong>Word to Guess</strong></h3>
+					</div>
+					<div class="panel-body">
+						<h3 id="word-blanks">_ _ _ _ _ _ _ _ _ </h3>
+					</div>
+				</div>
+		
+				<!-- Second Panel: Holds list of Wrong User, Number of Wrong Guesses-->
+				<div class="panel panel-default panel2">
+					<div class="panel-body">
+						<strong>Wrong Guesses: </strong> <span id="wrong-guesses"></span>
+						<br>
+						<strong>Guesses Left: </strong> <span id="guesses-left">9</span>
+					</div>
+				</div>
+		
+				<!-- Third Panel: Holds number of Wins, Losses -->
+				<div class="panel panel-default panel2 last">
+						<div class="panel-body">
+							<strong>Wins: </strong> <span id="win-counter">0</span>
+							<br>
+							<strong>Losses: </strong> <span id="loss-counter">0</span>
+						</div>
+				</div>
+	
+				
+			</div>
+		</div>
+	
+	</div>
+	<!-- Footer -->
+	<nav class="navbar navbar-default navbar-inverse" id="footer">
+			<div class="container-fluid">
+				<small>2018 Copyright</small>
+				<br>
+				<small>Bettina Junghahn</small>
+			</div>
+	</nav>
+	
+		<!--Script  -->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
